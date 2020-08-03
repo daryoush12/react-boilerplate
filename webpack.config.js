@@ -1,10 +1,46 @@
-var path = require("path");
+var path = require('path')
+const webpack = require('webpack')
+const htmlwebpackplugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: "development",
-  entry: "./src//index.js",
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index.bundle.js",
-  },
-};
+    module: {
+        rules: [
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                        plugins: ['@babel/plugin-proposal-object-rest-spread'],
+                    },
+                },
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'html-loader',
+                    },
+                ],
+            },
+        ],
+    },
+    mode: 'development',
+    entry: './src//index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'index.bundle.js',
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 8080,
+    },
+    plugins: [
+        new htmlwebpackplugin({
+            template: './src/index.html',
+            filename: '.index.html',
+        }),
+    ],
+}
