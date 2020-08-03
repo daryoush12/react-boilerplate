@@ -1,8 +1,8 @@
 import { Component } from 'react'
 import React from 'react'
 
-export class App extends Component {
-    render() {
-        return <div>Hello World</div>
-    }
+function App() {
+    return <div>Hello fdsfsdWorld!</div>
 }
+
+export default App

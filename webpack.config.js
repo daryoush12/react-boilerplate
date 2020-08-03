@@ -6,14 +6,10 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: ['@babel/plugin-proposal-object-rest-spread'],
-                    },
                 },
             },
             {
@@ -27,7 +23,7 @@ module.exports = {
         ],
     },
     mode: 'development',
-    entry: './src//index.js',
+    entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.bundle.js',
@@ -40,7 +36,7 @@ module.exports = {
     plugins: [
         new htmlwebpackplugin({
             template: './src/index.html',
-            filename: '.index.html',
+            filename: './index.html',
         }),
     ],
 }
