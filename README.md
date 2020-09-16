@@ -12,7 +12,7 @@ npm i
 ### Run development enviroment
 
 ```
-npm run dev
+npm run start
 ```
 
 ### Build application
