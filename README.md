@@ -1,61 +1,8 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
-
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
-
-**_INSERT GRAPHIC HERE (include hyperlink in image)_**
-
-# Repository Title Goes Here
-
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
-
-> include terms/tags that can be searched
-
-**Badges will go here**
-
--   build status
--   issues (waffle.io maybe)
--   devDependencies
--   npm package
--   coverage
--   slack
--   downloads
--   gitter chat
--   license
--   etc.
-
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)]
 
--   For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
+# Boilerplate for react
 
-**_INSERT ANOTHER GRAPHIC HERE_**
-
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
--   Most people will glance at your `README`, _maybe_ star it, and leave
--   Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
--   HAVE WHITE SPACE
--   MAKE IT PRETTY
--   GIFS ARE REALLY COOL
-
-> GIF Tools
-
--   Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
--   For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
+- Basic react template for new projects.
 
 ## Table of Contents (Optional)
 
