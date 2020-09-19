@@ -1,0 +1,7 @@
+languange: node_js
+jobs:
+    include:
+        - install: npm install
+        - script: echo "Running unit tests (1)"
+        - script: npm run build
+        - deploy: skip
