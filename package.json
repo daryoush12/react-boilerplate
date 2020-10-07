@@ -12,9 +12,6 @@
     "author": "Daryoush Farsimadan",
     "license": "ISC",
     "dependencies": {
-        "@material-ui/core": "^4.11.0",
-        "@material-ui/icons": "^4.9.1",
-        "@material-ui/styles": "^4.10.0",
         "jsx": "^0.9.89",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
@@ -32,6 +29,7 @@
         "css-loader": "^4.3.0",
         "html-loader": "^1.1.0",
         "html-webpack-plugin": "^4.3.0",
+        "jest": "^26.5.2",
         "style-loader": "^1.2.1",
         "webpack": "^4.44.1",
         "webpack-bundle-analyzer": "^3.9.0",
