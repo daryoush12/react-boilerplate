@@ -24,7 +24,7 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ['css-loader'],
+                use: ['style-loader', 'css-loader'],
             },
         ],
     },
@@ -46,4 +46,17 @@ module.exports = {
         }),
         new BundleAnalyzerPlugin(),
     ],
+
+    resolve: {
+        alias: {
+            '@Components': path.resolve(__dirname, 'src/Components/'),
+            '@Actions': path.resolve(__dirname, 'src/App/Store/Actions/'),
+            '@ActionTypes': path.resolve(
+                __dirname,
+                'src/App/Store/Actions/Types/'
+            ),
+            '@Reducers': path.resolve(__dirname, 'src/App/Store/Reducers/'),
+            '@Store': path.resolve(__dirname, 'src/App/Store/'),
+        },
+    },
 }
