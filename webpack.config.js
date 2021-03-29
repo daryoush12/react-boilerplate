@@ -50,13 +50,13 @@ module.exports = {
     resolve: {
         alias: {
             '@Components': path.resolve(__dirname, 'src/Components/'),
-            '@Actions': path.resolve(__dirname, 'src/App/Store/Actions/'),
+            '@Actions': path.resolve(__dirname, 'src/Store/Actions/'),
             '@ActionTypes': path.resolve(
                 __dirname,
                 'src/App/Store/Actions/Types/'
             ),
-            '@Reducers': path.resolve(__dirname, 'src/App/Store/Reducers/'),
-            '@Store': path.resolve(__dirname, 'src/App/Store/'),
+            '@Reducers': path.resolve(__dirname, 'src/Store/Reducers/'),
+            '@Store': path.resolve(__dirname, 'src/Store/'),
         },
     },
 }
