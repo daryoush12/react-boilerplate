@@ -3,7 +3,7 @@
 const theme = {
     main: '#191d32',
     lighter: '#282f44',
-    text: '#ffffffs',
+    text: '#ffffff',
 }
 
 export default theme
