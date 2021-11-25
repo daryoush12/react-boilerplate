@@ -1,18 +1,12 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-import LayoutRoute from '@Components/LayoutRoute/LayoutRoute'
-import Default from '../Layouts/Default'
-
-import Home from './Home'
+import { Route, Routes } from 'react-router-dom'
+import Home from './home'
 
 function App() {
     return (
-        <Router>
-            <Switch>
-                <LayoutRoute exact path="/" component={Home} Layout={Default} />
-            </Switch>
-        </Router>
+        <Routes>
+            <Route path="/" element={<Home />} />
+        </Routes>
     )
 }
 

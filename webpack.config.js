@@ -1,8 +1,8 @@
 var path = require('path')
 const webpack = require('webpack')
-const htmlwebpackplugin = require('html-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-    .BundleAnalyzerPlugin
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const BundleAnalyzerPlugin =
+    require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
     module: {
@@ -35,12 +35,14 @@ module.exports = {
         filename: 'index.bundle.js',
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
         compress: true,
         port: 8080,
     },
     plugins: [
-        new htmlwebpackplugin({
+        new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: './index.html',
         }),

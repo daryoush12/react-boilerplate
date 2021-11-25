@@ -1,17 +1,16 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import App from './Views/index'
-import store from '@Store/'
-import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 import theme from './Config/theme'
 import './index.css'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-    <Provider store={store}>
-        <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+        <BrowserRouter>
             <App></App>
-        </ThemeProvider>
-    </Provider>,
+        </BrowserRouter>
+    </ThemeProvider>,
     document.getElementById('root')
 )
